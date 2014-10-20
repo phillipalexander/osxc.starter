@@ -4,6 +4,7 @@
   roles:
   - role: osxc.packages
     brew_taps:
+    - homebrew/dupes
     - caskroom/fonts
     brew_packages:
     - git
@@ -13,7 +14,58 @@
     - ctags
     - reattach-to-user-namespace
     - tmux
+    - ack
+    - zsh
+    - figlet
+    - tree
+    - wget
+    - htop
+    - fasd
+    - ssh-copy-id
+    - node
+    ## databases
+    - postgres
+    - mongodb
+    - redis
+    - mysql
+    - sqlite
     cask_packages:
     - font-inconsolata-for-powerline
-    - iterm2
-    - macvim
+    - font-source-code-pro
+
+  # - role: npm_package
+  #   npm_packages:
+  #   - coffee-script
+  #   - grunt
+  #   - bower
+  #   - mocha
+  #   - node-inspector
+  #   - yo
+
+
+  # osx config
+  - role: dock
+    apps:
+    - /Applications/Dash.app
+    folders:
+    - path: ~/
+    - path: ~/Documents
+    - path: ~/src/github.com
+    - path: ~/Downloads
+      sort: datemodified
+
+  - role: dashboard
+    disabled: YES
+
+  - role: gatekeeper
+    gatekeeper: disable
+
+  - role: computername
+    computername: automata
+
+# cli
+  ## git
+  - role: git_config
+    git_user_name: phillipalexander
+    git_user_email: git@phillipalexander.io
+  - role: hub
