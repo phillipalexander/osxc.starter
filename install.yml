@@ -32,6 +32,39 @@
     cask_packages:
     - font-inconsolata-for-powerline
     - font-source-code-pro
+  # gui
+  ## text editors
+    # - atom
+    - sublime-text3
+    - evernote
+  ## tooling
+    - alfred
+    - flux
+    - dash
+    - appcleaner
+    - clamxav
+    - slate
+    - amethyst
+    - gfxcardstatus
+  ## dev tools
+    - kaleidoscope
+    - transmission
+    - vmware-fusion
+    - recordit
+    # - karabiner
+  ## browsers
+    - google-chrome
+  ## sync
+    - google-drive
+    - dropbox
+  ## graphics
+    - vlc
+    - screenflow
+  ## communication
+    - hipchat
+    - google-hangouts
+  ## other
+
 
   # - role: npm_package
   #   npm_packages:
@@ -42,6 +75,7 @@
   #   - node-inspector
   #   - yo
 
+  - role: spf13_vim
 
   # osx config
   - role: dock
@@ -53,13 +87,10 @@
     - path: ~/src/github.com
     - path: ~/Downloads
       sort: datemodified
-
   - role: dashboard
     disabled: YES
-
   - role: gatekeeper
     gatekeeper: disable
-
   - role: computername
     computername: automata
 
