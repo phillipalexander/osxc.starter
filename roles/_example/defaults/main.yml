@@ -1,0 +1,6 @@
+---
+# if we have default values that would be
+# overriden by playbook or vars they go here
+###########################################
+
+variable: defaults
