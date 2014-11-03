@@ -5,15 +5,43 @@
   - role: osxc.packages
     brew_taps:
     - caskroom/fonts
+    - homebrew/dupes
     brew_packages:
     - git
     - zsh
     - vim
-    - the_silver_searcher
-    - ctags
     - reattach-to-user-namespace
     - tmux
+    - ack
+    - zsh
+    - figlet
+    - tree
+    - wget
+    - htop
+    - fasd
+    # - node
+    - ssh-copy-id
+    ## databases
+    - postgres
+    - mongodb
+    - redis
+    - mysql
+    - sqlite
     cask_packages:
+    # fonts
     - font-inconsolata-for-powerline
-    - iterm2
-    - macvim
+    ## dev tools
+    - kaleidoscope
+    - transmission
+    - vmware-fusion
+    ## browsers
+    - google-chrome
+    ## file sync
+    - dropbox
+    ## video
+    - vlc
+    - screenflow
+    - recordit
+    ## communication
+    - hipchat
+    - google-hangouts
