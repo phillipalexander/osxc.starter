@@ -7,6 +7,7 @@
     - caskroom/fonts
     - homebrew/dupes
     brew_packages:
+    ## cli tools
     - git
     - zsh
     - vim
@@ -19,6 +20,7 @@
     - wget
     - htop
     - fasd
+    - shellcheck
     # - node
     - ssh-copy-id
     ## databases
@@ -34,6 +36,7 @@
     - kaleidoscope
     - transmission
     - vmware-fusion
+    - platypus
     ## browsers
     - google-chrome
     ## file sync
@@ -44,4 +47,9 @@
     - recordit
     ## communication
     - hipchat
+    - slack
     - google-hangouts
+    ## misc
+    - omnigraffle
+    - clamxav
+    - the-unarchiver
